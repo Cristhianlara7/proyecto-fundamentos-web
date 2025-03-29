@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Barrio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Tienda de Barrio</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <a class="navbar-brand" href="galeria.html">Galería</a>
+      <a class="navbar-brand" href="nosotros.html">Sobre Nosotros</a>
+    </nav>
+  </header>
+  <main>
+    
+    <section id="galeria" class="container mt-5">
+      <h2>Galería</h2>
+      <div class="category-filter">
+        <button class="btn btn-primary" onclick="filterProducts('categoria1')">Dulces</button>
+        <button class="btn btn-primary" onclick="filterProducts('categoria2')">Alimentos</button>
+        <button class="btn btn-secondary" onclick="filterProducts('')">Mostrar Todos</button>
+      </div>
+      <div class="row" id="gallery-container">
+        
+            <!-- Producto 1 -->
+            <div class="col-md-4 categoria2">
+                <div class="card">
+                  <img src="img1.jpg" class="img-thumbnail" alt="Nescafé" onclick="window.location.href='detalle.html?image=img1.jpg&title=Nescafé&description=Nescafé clásico única presentación disponible en tienda&author=Cristhian Lara'">
+                  <div class="card-body">
+                    <h5 class="card-title">Nescafé</h5>
+                    <p class="card-text">Nescafé clásico, presentación única.</p>
+                  </div>
+                </div>
+              </div>
+      
+            <!-- Producto 2 -->
+        <div class="col-md-4 categoria2">
+            <div class="card">
+              <img src="img2.jpg" class="img-thumbnail" alt="Caldo" onclick="window.location.href='detalle.html?image=img2.jpg&title=Caldo&description=Caldo en cubos, ideal para sopas y guisos&author=Cristhian Lara'">
+              <div class="card-body">
+                <h5 class="card-title">Caldo</h5>
+                <p class="card-text">Caldo en cubos, ideal para sopas y guisos.</p>
+              </div>
+            </div>
+          </div>
+      
+              <!-- Producto 3 -->
+        <div class="col-md-4 categoria1">
+            <div class="card">
+              <img src="img3.jpg" class="img-thumbnail" alt="Barritas de Fresa" onclick="window.location.href='detalle.html?image=img3.jpg&title=Barritas de Fresa&description=Dulce barritas con sabor a fresa, presentación en caja&author=Cristhian Lara'">
+              <div class="card-body">
+                <h5 class="card-title">Barritas de Fresa</h5>
+                <p class="card-text">Dulce barritas con sabor a fresa.</p>
+              </div>
+            </div>
+          </div>
+        
+              <!-- Producto 4 -->
+        <div class="col-md-4 categoria2">
+            <div class="card">
+              <img src="img4.jpg" class="img-thumbnail" alt="Harina PAN" onclick="window.location.href='detalle.html?image=img4.jpg&title=Harina PAN&description=Harina de maíz precocida, esencial para arepas y empanadas&author=Cristhian Lara'">
+              <div class="card-body">
+                <h5 class="card-title">Harina PAN</h5>
+                <p class="card-text">Harina de maíz precocida.</p>
+              </div>
+            </div>
+          </div>
+
+           <!-- Producto 5 -->
+           <div class="col-md-4 categoria2">
+            <div class="card">
+              <img src="img5.jpg" class="img-thumbnail" alt="Azucar" onclick="window.location.href='detalle.html?image=img4.jpg&title=Azucar&description=Azucar morena, perfecta para endulzar el café&author=Cristhian Lara'">
+              <div class="card-body">
+                <h5 class="card-title">Azucar</h5>
+                <p class="card-text">Azucar morena</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+            
+      
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Tienda de Barrio. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
